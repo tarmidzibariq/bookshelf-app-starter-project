@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #1976d2;
+  color: #fff;
+  padding: 15px;
+}
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* Layout */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+section h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Form */
+form {
+  display: grid;
+  gap: 15px;
+}
+label {
+  font-size: 15px;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 98%;
+}
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 6px;
+}
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+/* Toggle (selesai/belum selesai) */
+[data-testid="bookItemIsCompleteButton"] {
+  background: #10b981; /* hijau */
+}
+[data-testid="bookItemIsCompleteButton"]:hover {
+  background: #059669;
+}
+
+/* Delete */
+[data-testid="bookItemDeleteButton"] {
+  background: #ef4444; /* merah */
+}
+[data-testid="bookItemDeleteButton"]:hover {
+  background: #dc2626;
+}
+
+/* Edit */
+[data-testid="bookItemEditButton"] {
+  background: #f59e0b; /* oranye */
+}
+[data-testid="bookItemEditButton"]:hover {
+  background: #d97706;
+}
+
+button:hover {
+  background: #145ca1;
+}
+
+/* List Buku */
+#incompleteBookList,
+#completeBookList {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+[data-testid="bookItem"] {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 14px;
+  background: #fafafa;
+}
+[data-testid="bookItem"] h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+[data-testid="bookItem"] p {
+  margin: 0;
+  font-size: 14px;
+}
+[data-testid="bookItem"] div {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
